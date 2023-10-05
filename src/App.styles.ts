@@ -6,4 +6,7 @@ export const Container = styled.div`
   margin: 0;
   color: ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.quaternary};
+  display: grid;
+  padding: ${({ theme }) => theme.spacing['5']};
+  gap: ${({ theme }) => theme.spacing['5']};
 `

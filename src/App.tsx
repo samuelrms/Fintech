@@ -7,8 +7,8 @@ function App() {
   return (
     <Container>
       <DataContextProvider>
+        <Sidenav />
         <main>
-          <Sidenav />
           <Header />
           <Resume />
         </main>
