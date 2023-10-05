@@ -1,15 +1,16 @@
 import { Header, Sidenav } from './Components'
+import { DataContextProvider } from './Context'
 import { Resume } from './Pages'
 
 function App() {
   return (
-    <div>
+    <DataContextProvider>
       <Sidenav />
       <main>
         <Header />
       </main>
       <Resume />
-    </div>
+    </DataContextProvider>
   )
 }
 
