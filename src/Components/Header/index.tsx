@@ -1,3 +1,10 @@
+import { DataRange } from '../DataRange'
+import { HeaderContainer } from './Header.styles'
+
 export const Header = () => {
-  return <div>Header</div>
+  return (
+    <HeaderContainer>
+      <DataRange />
+    </HeaderContainer>
+  )
 }
