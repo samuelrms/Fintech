@@ -1,4 +1,5 @@
 import { Typography } from '../..'
+import { Input } from './DateInput.styles'
 import { Props } from './DateInput.types'
 
 export const DataInput = ({ label, ...props }: Props) => {
@@ -7,7 +8,7 @@ export const DataInput = ({ label, ...props }: Props) => {
       <Typography as="label" htmlFor={label}>
         {label}
       </Typography>
-      <input type="date" id={label} {...props} />
+      <Input type="date" id={label} {...props} />
     </div>
   )
 }
