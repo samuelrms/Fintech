@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from 'react'
+
 export type Sales = {
   id: string
   name: string
@@ -10,6 +12,10 @@ export type Sales = {
 
 export type Props = {
   loading: boolean
+  initRange: string
+  finallyRange: string
   error: string | null
   data: Sales[] | null
+  setInitRange: Dispatch<SetStateAction<string>>
+  setFinallyRange: Dispatch<SetStateAction<string>>
 }

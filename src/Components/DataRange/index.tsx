@@ -1,11 +1,10 @@
-import { useState } from 'react'
 import { DataInput } from '../Input'
-import { Form } from './DataRange.styles'
 import { Stack } from '..'
+import { useData } from '../../Context'
 
 export const DataRange = () => {
-  const [initRange, setInitRange] = useState('')
-  const [finallyRange, setFinallyRange] = useState('')
+  const { finallyRange, initRange, setInitRange, setFinallyRange } = useData()
+
   return (
     <Stack flex as="form" onSubmit={(e) => e.preventDefault()}>
       <DataInput
@@ -13,11 +12,13 @@ export const DataRange = () => {
         value={initRange}
         onChange={({ target }) => setInitRange(target.value)}
       />
+      {initRange}
       <DataInput
         label="Final"
         value={finallyRange}
         onChange={({ target }) => setFinallyRange(target.value)}
       />
+      {finallyRange}
     </Stack>
   )
 }
