@@ -21,6 +21,7 @@ export const CustomStack = styled.div<Props>`
   gap: ${({ gap }) => gap}rem;
   height: ${({ height }) => height};
   width: ${({ width }) => width};
+  flex-direction: ${({ direction }) => direction};
 
   ${({ flex, theme }) =>
     flex &&
@@ -46,4 +47,18 @@ export const CustomStack = styled.div<Props>`
       color: ${theme.colors.primary};
     }
     `}
+
+  ${({ sale, theme }) =>
+    sale &&
+    `
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: ${theme.spacing['5']};
+    margin-bottom: ${theme.spacing['2.5']};
+    align-items: center;
+
+    > div:last-child {
+      justify-self: end;
+    }
+  `}
 `

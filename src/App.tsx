@@ -1,7 +1,7 @@
 import { Container } from './App.styles'
 import { Header, Sidenav } from './Components'
 import { DataContextProvider } from './Context'
-import { Resume } from './Pages'
+import { Resume, Sales } from './Pages'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <main>
           <Header />
           <Resume />
+          <Sales />
         </main>
       </DataContextProvider>
     </Container>

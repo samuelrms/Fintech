@@ -40,10 +40,12 @@ export const resetCss = css`
     scroll-behavior: smooth;
   }
 
+  a,
   a:focus,
   a:hover,
   a:active {
     text-decoration: none !important;
+    color: inherit !important;
   }
 
   ul {

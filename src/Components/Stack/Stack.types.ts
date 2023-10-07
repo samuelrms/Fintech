@@ -12,13 +12,13 @@ export type Props = {
   /** Defines the HTML element that will be rendered. It can be a valid HTML element or a React component. */
   as?: ElementsVariants
   /** Defines the background color of the element. Use a valid CSS color value. */
-  bgColor?: string
+  bgColor?: CSSProperties['backgroundColor']
   /** Defines the color of the element's border. Use a valid CSS color value. */
-  borderColor?: string
+  borderColor?: CSSProperties['borderColor']
   /** Defines the border radius of the element in rem. */
   br?: number
   /** Defines the style of the element's border, e.g. "solid" or "dotted". */
-  borderStyle?: string
+  borderStyle?: CSSProperties['borderStyle']
   /** Sets the border width of the element in rem. */
   borderWidth?: number
   /** Defines the padding of the element in rem. */
@@ -44,20 +44,22 @@ export type Props = {
   /** Defines the spacing between child elements, if the element (in rem) is a container with flexbox or grid. */
   gap?: number
   /** Defines the color of the text inside the element. Use a valid CSS color value. */
-  color?: string
+  color?: CSSProperties['color']
   flex?: boolean
   resume?: boolean
+  sale?: boolean
   /**
    * Defines the width of the element. Use a valid CSS width value.
    * @example
    * "100px", "50%", "auto"
    */
-  width?: number | string
+  width?: CSSProperties['width']
 
   /**
    * Defines the height of the element. Use a valid CSS height value.
    * @example
    * "200px", "50%", "auto"
    */
-  height?: number | string
+  height?: CSSProperties['height']
+  direction?: CSSProperties['flexDirection']
 } & ComponentProps<'div'>

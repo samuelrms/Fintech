@@ -70,7 +70,9 @@ export const Resume = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Stack flex>Graficos</Stack>
+      <Stack flex mb>
+        Graficos
+      </Stack>
     </Stack>
   )
 }
