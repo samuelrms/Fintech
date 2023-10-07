@@ -1,3 +1,5 @@
 import { ComponentProps } from 'react'
 
-export type Props = ComponentProps<'button'>
+export type Props = {
+  date?: boolean
+} & ComponentProps<'button'>
