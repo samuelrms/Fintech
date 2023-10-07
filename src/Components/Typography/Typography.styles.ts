@@ -4,6 +4,7 @@ import { Props } from './Typography.types'
 export const StyledTypography = styled.p<Props>`
   color: ${({ theme, color }) => color ?? theme.colors.text};
   line-height: auto;
+  font-size: ${({ fontSize }) => fontSize}rem;
 
   ${({ as, theme }) => `
   font-weight: ${

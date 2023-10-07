@@ -2,11 +2,11 @@ import { Dispatch, SetStateAction } from 'react'
 
 export type Sales = {
   id: string
-  name: string
-  price: number
-  status: 'pago' | 'preocessando' | 'falha'
-  payment: 'boleto' | 'cartão' | 'pix'
-  installments: number | null
+  nome: string
+  preco: number
+  status: 'pago' | 'processando' | 'falha'
+  pagamento: 'boleto' | 'cartão' | 'pix'
+  parcelas: number | null
   data: string
 }
 

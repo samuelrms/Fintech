@@ -4,7 +4,7 @@ import { Props } from './Stack.types'
 export const CustomStack = styled.div<Props>`
   display: block;
   padding: ${({ theme }) => theme.spacing['5']};
-  border-radius: ${({ theme }) => theme.spacing['5']};
+  border-radius: ${({ theme, br }) => br ?? theme.spacing['5']};
   background-color: ${({ theme, bgColor }) => bgColor ?? theme.colors.white};
   border-color: ${({ borderColor }) => borderColor};
   border-style: ${({ borderStyle }) => borderStyle};
@@ -19,6 +19,8 @@ export const CustomStack = styled.div<Props>`
   margin-top: ${({ mt }) => mt}rem;
   margin-bottom: ${({ mb, theme }) => mb && theme.spacing['5']};
   gap: ${({ gap }) => gap}rem;
+  height: ${({ height }) => height};
+  width: ${({ width }) => width};
 
   ${({ flex, theme }) =>
     flex &&
@@ -30,4 +32,18 @@ export const CustomStack = styled.div<Props>`
     flex: 1;
   }
   `}
+
+  ${({ resume, theme }) =>
+    resume &&
+    `
+    font-size: ${theme.fonts.size['2xl']};
+    font-weight: ${theme.fonts.weight.semiBold};
+    flex-wrap: wrap;
+
+    h2{
+      font-size: ${theme.fonts.size['2xl']};
+      margin-bottom: ${theme.spacing['5']};
+      color: ${theme.colors.primary};
+    }
+    `}
 `

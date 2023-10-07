@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react'
+import { CSSProperties, ComponentProps } from 'react'
 
 export type ElementsVariants =
   | 'div'
@@ -46,4 +46,18 @@ export type Props = {
   /** Defines the color of the text inside the element. Use a valid CSS color value. */
   color?: string
   flex?: boolean
+  resume?: boolean
+  /**
+   * Defines the width of the element. Use a valid CSS width value.
+   * @example
+   * "100px", "50%", "auto"
+   */
+  width?: number | string
+
+  /**
+   * Defines the height of the element. Use a valid CSS height value.
+   * @example
+   * "200px", "50%", "auto"
+   */
+  height?: number | string
 } & ComponentProps<'div'>

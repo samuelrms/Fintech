@@ -14,4 +14,5 @@ export type Props = {
   color?: string
   as: ElementsVariants
   htmlFor?: string
+  fontSize?: number
 } & ComponentProps<'p'>
