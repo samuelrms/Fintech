@@ -8,10 +8,10 @@ export const SaleItem = ({ sale }: Props) => {
       <NavLink to={`/vendas/${sale.id}`} style={{ fontFamily: 'monospace' }}>
         {sale.id}
       </NavLink>
-      <Stack p={0} m={0}>
+      <Stack outline p={0} m={0}>
         <Typography as="span">{sale.nome}</Typography>
       </Stack>
-      <Stack p={0} m={0}>
+      <Stack outline p={0} m={0}>
         <Typography as="span">
           {sale.preco.toLocaleString('pt-br', {
             style: 'currency',

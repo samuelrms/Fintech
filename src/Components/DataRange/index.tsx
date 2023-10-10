@@ -6,7 +6,7 @@ export const DataRange = () => {
   const { finallyRange, initRange, setInitRange, setFinallyRange } = useData()
 
   return (
-    <Stack flex as="form" onSubmit={(e) => e.preventDefault()}>
+    <Stack m={0} flex as="form" outline onSubmit={(e) => e.preventDefault()}>
       <DataInput
         label="Inicio"
         value={initRange}

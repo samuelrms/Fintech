@@ -4,6 +4,8 @@ export const SidenavContainer = styled.nav`
   background: ${({ theme }) => theme.colors.tertiary};
   border-radius: ${({ theme }) => theme.spacing[5]};
   padding: ${({ theme }) => theme.spacing[5]};
+  outline: 2px solid ${({ theme }) => theme.colors.primary};
+  box-shadow: 10px 10px 21px -6px rgba(0, 0, 0, 0.39);
 
   li {
     display: flex;
@@ -36,5 +38,29 @@ export const SidenavContainer = styled.nav`
 
   .mb {
     margin-bottom: ${({ theme }) => theme.spacing[5]};
+  }
+
+  @media (max-width: 700px) {
+    padding: ${({ theme }) => theme.spacing[3]};
+    .mb {
+      margin-bottom: ${({ theme }) => theme.spacing[3]};
+    }
+
+    li {
+      gap: ${({ theme }) => theme.spacing[2]};
+    }
+
+    li a {
+      padding: ${({ theme }) => theme.spacing[2]} 0;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    li a {
+      font-size: ${({ theme }) => theme.fonts.size.sm};
+    }
   }
 `

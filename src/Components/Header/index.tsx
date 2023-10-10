@@ -24,11 +24,11 @@ export const Header = () => {
 
   return (
     <HeaderContainer>
-      <DateRange mb>
+      <DateRange m={0} mb outline>
         <Stack>
           <DataRange />
         </Stack>
-        <Stack bgColor={theme.colors.tertiary}>
+        <Stack m={0} bgColor={theme.colors.tertiary}>
           <Typography color={theme.colors.secondary} as="h1">
             {title}
           </Typography>

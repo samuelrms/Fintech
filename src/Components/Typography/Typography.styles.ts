@@ -15,12 +15,12 @@ export const StyledTypography = styled.p<Props>`
   ${({ as, theme }) =>
     as === 'label' &&
     `
-    margin-bottom: ${theme.spacing['2.5']};
+    margin-bottom: ${theme.spacing[2.5]};
     font-size: ${theme.fonts.size.base};
     display: block;
     color: ${theme.colors.secondary};
-    padding: ${theme.spacing['2.5']} ${theme.spacing['3']};
+    padding: ${theme.spacing[2.5]} ${theme.spacing['3']};
     background-color: ${theme.colors.quaternary};
-    border-radius: ${theme.spacing['5']};
+    border-radius: ${theme.spacing[5]};
   `}
 `

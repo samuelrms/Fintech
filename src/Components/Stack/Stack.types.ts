@@ -48,6 +48,7 @@ export type Props = {
   flex?: boolean
   resume?: boolean
   sale?: boolean
+  outline?: boolean
   /**
    * Defines the width of the element. Use a valid CSS width value.
    * @example

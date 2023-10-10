@@ -4,11 +4,11 @@ export const spacing = {
   '1': '0.25rem',
   '1.5': '0.375rem',
   '2': '0.5rem',
-  '2.5': '0.625rem',
+  2.5: '0.625rem',
   '3': '0.75rem',
   '3.5': '0.875rem',
   '4': '1rem',
-  '5': '1.25rem',
+  5: '1.25rem',
   '6': '1.5rem',
   '7': '1.75rem',
   '8': '2rem',
@@ -34,14 +34,14 @@ export const spacing = {
   '72': '18rem',
   '80': '20rem',
   '96': '24rem',
-};
+}
 
 export const breakpoints = {
   sm: '576px',
   md: '768px',
   lg: '992px',
   xl: '1200px',
-};
+}
 
 export const borderWidth = {
   default: '1px',
@@ -49,8 +49,8 @@ export const borderWidth = {
   '2': '2px',
   '4': '4px',
   '8': '8px',
-};
+}
 
-export type Breakpoints = typeof breakpoints;
-export type Spacing = typeof spacing;
-export type BorderWidth = typeof borderWidth;
+export type Breakpoints = typeof breakpoints
+export type Spacing = typeof spacing
+export type BorderWidth = typeof borderWidth

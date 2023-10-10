@@ -19,8 +19,6 @@ function App() {
             />
           ))}
           <Route path="/vendas/:id" element={<Sale />} />
-          {/* <Resume  /> */}
-          {/* <Sales /> */}
         </Routes>
       </main>
     </Container>

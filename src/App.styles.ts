@@ -7,7 +7,13 @@ export const Container = styled.div`
   color: ${({ theme }) => theme.colors.secondary};
   background-color: ${({ theme }) => theme.colors.quaternary};
   display: grid;
-  padding: ${({ theme }) => theme.spacing['5']};
-  gap: ${({ theme }) => theme.spacing['5']};
+  padding: ${({ theme }) => theme.spacing[5]};
+  gap: ${({ theme }) => theme.spacing[5]};
   grid-template-columns: 240px auto;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    padding: ${({ theme }) => theme.spacing[3]};
+    gap: ${({ theme }) => theme.spacing[3]};
+  }
 `
