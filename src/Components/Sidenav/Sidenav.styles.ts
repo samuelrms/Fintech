@@ -26,6 +26,7 @@ export const SidenavContainer = styled.nav`
     font-size: ${({ theme }) => theme.fonts.size.xl};
     color: ${({ theme }) => theme.colors.primary};
     padding: ${({ theme }) => theme.spacing[2.5]} 0;
+    margin: ${({ theme }) => theme.spacing[1]} 0;
   }
 
   li:hover span {
