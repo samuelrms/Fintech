@@ -1,6 +1,7 @@
 import FintechSVG from '../../assets/FintechSVG'
 import { appRoutes } from '../../mocks'
 import { SidenavContainer } from './Sidenav.styles'
+import { NavLink } from 'react-router-dom'
 
 export const Sidenav = () => {
   return (
@@ -12,7 +13,7 @@ export const Sidenav = () => {
             <span>
               <img src={route.image} alt={route.altImage} />
             </span>
-            <a href={route.path ?? undefined}>{route.title}</a>
+            <NavLink to={route.path as string}>{route.title}</NavLink>
           </li>
         ))}
       </ul>

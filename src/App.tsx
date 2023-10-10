@@ -1,19 +1,28 @@
 import { Container } from './App.styles'
 import { Header, Sidenav } from './Components'
-import { DataContextProvider } from './Context'
-import { Resume, Sales } from './Pages'
+import { Routes, Route } from 'react-router-dom'
+import { Sale } from './Pages'
+import { appRoutes } from './mocks'
 
 function App() {
   return (
     <Container>
-      <DataContextProvider>
-        <Sidenav />
-        <main>
-          <Header />
-          <Resume />
-          <Sales />
-        </main>
-      </DataContextProvider>
+      <Sidenav />
+      <main>
+        <Header />
+        <Routes>
+          {appRoutes.map((route) => (
+            <Route
+              key={route.title}
+              path={route.path}
+              element={route?.component?.()}
+            />
+          ))}
+          <Route path="/vendas/:id" element={<Sale />} />
+          {/* <Resume  /> */}
+          {/* <Sales /> */}
+        </Routes>
+      </main>
     </Container>
   )
 }

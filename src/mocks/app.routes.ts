@@ -4,19 +4,22 @@ import webhooks from '../assets/icons/webhooks.svg'
 import settings from '../assets/icons/configuracoes.svg'
 import contact from '../assets/icons/contato.svg'
 import exit from '../assets/icons/sair.svg'
+import { Resume, Sales } from '../Pages'
 
 export const appRoutes = [
   {
     image: resume,
     altImage: 'Icon Resumo',
     title: 'Resumo',
-    path: '/resumo',
+    path: '/',
+    component: Resume,
   },
   {
     image: transactions,
-    altImage: 'Icon Transações',
-    title: 'Transações',
-    path: '/transacoes',
+    altImage: 'Icon Vendas',
+    title: 'Vendas',
+    path: '/vendas',
+    component: Sales,
   },
   {
     image: webhooks,
