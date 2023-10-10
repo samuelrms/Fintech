@@ -12,13 +12,11 @@ export const DataRange = () => {
         value={initRange}
         onChange={({ target }) => setInitRange(target.value)}
       />
-      {initRange}
       <DataInput
         label="Final"
         value={finallyRange}
         onChange={({ target }) => setFinallyRange(target.value)}
       />
-      {finallyRange}
     </Stack>
   )
 }

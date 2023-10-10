@@ -9,4 +9,5 @@ export const Container = styled.div`
   display: grid;
   padding: ${({ theme }) => theme.spacing['5']};
   gap: ${({ theme }) => theme.spacing['5']};
+  grid-template-columns: 240px auto;
 `
