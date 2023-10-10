@@ -5,7 +5,7 @@ export type Sales = {
   nome: string
   preco: number
   status: 'pago' | 'processando' | 'falha'
-  pagamento: 'boleto' | 'cartão' | 'pix'
+  pagamento: 'boleto' | 'cartao' | 'pix'
   parcelas: number | null
   data: string
 }

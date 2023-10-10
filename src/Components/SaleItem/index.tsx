@@ -1,12 +1,13 @@
 import { Props } from './SaleItem.types'
 import { Stack, Typography } from '..'
+import { NavLink } from 'react-router-dom'
 
 export const SaleItem = ({ sale }: Props) => {
   return (
     <Stack sale flex direction="column">
-      <a href="" style={{ fontFamily: 'monospace' }}>
+      <NavLink to={`/vendas/${sale.id}`} style={{ fontFamily: 'monospace' }}>
         {sale.id}
-      </a>
+      </NavLink>
       <Stack p={0} m={0}>
         <Typography as="span">{sale.nome}</Typography>
       </Stack>
